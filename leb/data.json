@@ -1,0 +1,19 @@
+{
+"id": 1,
+"name": "Jason Lebico",
+"email": "jaysonlebss@gmail.com",
+"phone": "+3213131132135464",
+"address": {
+    "street": "143 main st",
+    "city": "caloocan",
+    "state": "SA",
+    "zip": "1234"
+
+},
+"Company": {
+    "name": "TecNo",
+    "position":"SE",
+    "department": "Development"
+}
+
+}

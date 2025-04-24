@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fetchMessage()">Click Me</button>
+    <div id="message"></div>
+    <script>
+         
+         function fetchMessage(){
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://leb03.github.io/WebSysAPI/data.json',true);
+
+            xhr.onload = function() {
+                if (xhr.status===200){
+                    let response = JSON.parse(xhr.responseText);
+                    document.getElementById('message').innerText=response.name;
+
+                } else{
+                    document.getElementById('message').innerText='error';
+                }
+            };
+            xhr.send();
+         }
+         
+    </script>
+</body>
+</html>
